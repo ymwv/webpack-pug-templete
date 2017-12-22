@@ -1,0 +1,12 @@
+extends ./model/layout.jade
+block title
+  -var docTitle = htmlWebpackPlugin.options.title
+  title #{docTitle}
+block content
+  header
+    -var pageHeader = htmlWebpackPlugin.options.myPageHeader
+    .logo #{pageHeader}
+    #music_btn
+    <img class='ddd' src="https://github.com/chokcoco/css3-/raw/master/images/example3.gif" alt="">
+  //loading
+  //include model/loading

@@ -1,0 +1,14 @@
+extends ./model/layout.jade
+block style
+  //- link(href="./css/common.css", rel="stylesheet")
+  //- link(href="./css/setting.css", rel="stylesheet")
+block title
+  -var docTitle = htmlWebpackPlugin.options.title
+  title #{docTitle}
+block content
+  header
+    -var pageHeader = htmlWebpackPlugin.options.myPageHeader
+    .logo #{pageHeader}gff
+    #music_btn
+  //loading
+  //include model/loading
